@@ -21,39 +21,41 @@ export const nav_links = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 mx-auto w-[85%] shadow-sm">
-      <div className="mx-auto w-full max-w-7xl">
-        <div className="flex h-14 items-center justify-between">
-          <Link href="#" className="flex items-center" prefetch={false}>
-            <MountainIcon className="h-6 w-6" />
-            <span className="sr-only">Acme Inc</span>
-          </Link>
-          <nav className="hidden gap-4 md:flex">
-            {nav_links.map((item, index) => {
-              return (
-                <Link
-                  href={item.path}
-                  key={index}
-                  className="flex items-center text-sm font-medium transition-colors hover:underline"
-                  prefetch={false}
-                >
-                  {item.title}
-                </Link>
-              );
-            })}
-          </nav>
-          <div className="flex items-center gap-4">
-            <div className="hidden items-center justify-center space-x-4 md:flex">
-              <ModeToggle />
-              <Button size="sm">Hire Me</Button>
-            </div>
-            <div className="block md:hidden">
-              <Sidebar />
+    <div className="top-0 z-50 fixed inset-x-0 backdrop-blur-sm w-full">
+      <nav className="mx-auto w-[85%]">
+        <div className="mx-auto w-full max-w-7xl">
+          <div className="flex justify-between items-center h-14">
+            <Link href="#" className="flex items-center" prefetch={false}>
+              <MountainIcon className="w-6 h-6" />
+              <span className="sr-only">Acme Inc</span>
+            </Link>
+            <nav className="md:flex gap-4 hidden">
+              {nav_links.map((item, index) => {
+                return (
+                  <Link
+                    href={item.path}
+                    key={index}
+                    className="flex items-center font-medium text-sm hover:underline transition-colors"
+                    prefetch={false}
+                  >
+                    {item.title}
+                  </Link>
+                );
+              })}
+            </nav>
+            <div className="flex items-center gap-4">
+              <div className="md:flex justify-center items-center space-x-4 hidden">
+                <ModeToggle />
+                <Button size="sm">Hire Me</Button>
+              </div>
+              <div className="block md:hidden">
+                <Sidebar />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 
