@@ -15,7 +15,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col justify-start items-center md:items-start gap-7 lg:py-20 w-full md:w-[50%] lg:w-[70%]">
             <p className="flex flex-col text-center md:text-start large-sentences">
-              <span>I'm Web Developer</span>
+              <span>{`I'm Web Developer`}</span>
               <span>A. Zaky Ubaidillah</span>
             </p>
             <p className="text-center md:text-start normal-sentences">
