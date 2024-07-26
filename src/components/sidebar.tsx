@@ -13,13 +13,13 @@ export function Sidebar() {
         </Button>
       </SheetTrigger>
       <SheetContent>
-        <nav className="mt-11 flex flex-col items-end justify-start gap-10 md:hidden">
+        <nav className="flex flex-col justify-start items-end gap-10 md:hidden mt-11">
           {nav_links.map((item, index) => {
             return (
               <Link
                 href={item.path}
                 key={index}
-                className="flex items-center text-sm font-medium transition-colors hover:underline"
+                className="flex items-center font-medium text-sm hover:underline transition-colors"
                 prefetch={false}
               >
                 {item.title}
