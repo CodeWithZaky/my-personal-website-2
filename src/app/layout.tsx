@@ -29,9 +29,9 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="container mx-auto">
+          <main className="w-full bg-primary/10">
             <Navbar />
-            <div className="px-5 py-20 md:px-10">{children}</div>
+            {children}
           </main>
         </ThemeProvider>
       </body>

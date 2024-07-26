@@ -21,8 +21,8 @@ export const nav_links = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed inset-x-0 top-0 z-50 bg-background px-5 shadow-sm dark:bg-background md:px-10">
-      <div className="mx-auto w-full max-w-7xl px-4">
+    <nav className="fixed inset-x-0 top-0 z-50 mx-auto w-[85%] shadow-sm">
+      <div className="mx-auto w-full max-w-7xl">
         <div className="flex h-14 items-center justify-between">
           <Link href="#" className="flex items-center" prefetch={false}>
             <MountainIcon className="h-6 w-6" />
