@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ModeToggle } from "./mode-toggle";
 import { Sidebar } from "./sidebar";
+import { Button } from "./ui/button";
 
 export const nav_links = [
-  { path: "/", title: "Home" },
+  {
+    path: "/",
+    title: "Home",
+  },
   {
     path: "/about",
     title: "About",
@@ -21,12 +24,11 @@ export const nav_links = [
 
 export default function Navbar() {
   return (
-    <div className="top-0 z-50 fixed inset-x-0 backdrop-blur-sm w-full">
+    <div className="top-0 z-50 sticky inset-x-0 backdrop-blur-sm w-full">
       <nav className="mx-auto w-[85%]">
         <div className="mx-auto w-full">
           <div className="flex justify-between items-center h-14">
-            <Link href="#" className="flex items-center" prefetch={false}>
-              {/* <MountainIcon className="w-6 h-6" /> */}
+            <Link href="/" className="flex items-center" prefetch={false}>
               <MyLogo />
               <span className="sr-only">Acme Inc</span>
             </Link>
@@ -60,27 +62,10 @@ export default function Navbar() {
   );
 }
 
-function MountainIcon(props: any) {
+function MyLogo() {
   return (
     <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-    </svg>
-  );
-}
-function MyLogo(props: any) {
-  return (
-    <svg
+      className="bg-primary dark:bg-transparent rounded-md"
       width="24"
       height="24"
       viewBox="0 0 100 100"
