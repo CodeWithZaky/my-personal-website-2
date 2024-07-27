@@ -65,11 +65,11 @@
   .normal-sentences {
     @apply text-sm text-foreground dark:text-foreground md:text-base lg:text-lg;
   }
-  .large-sentences {
-    @apply text-xl text-foreground dark:text-foreground md:text-3xl lg:text-5xl;
-  }
   .medium-sentences {
     @apply text-lg text-foreground dark:text-foreground sm:text-xl md:text-2xl;
+  }
+  .large-sentences {
+    @apply text-xl text-foreground dark:text-foreground md:text-3xl lg:text-5xl;
   }
   .border-image {
     @apply shadow-[13px_-13px] shadow-primary;
