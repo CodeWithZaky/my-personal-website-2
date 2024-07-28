@@ -32,14 +32,14 @@ export default function Navbar() {
               <MyLogo />
               <span className="sr-only">Acme Inc</span>
             </Link>
-            <nav className="md:flex gap-4 hidden">
+            <nav className="md:flex gap-5 hidden">
               {nav_links.map((item, index) => {
                 return (
                   <Link
+                    key={String(index) + "nav_links_navbar"}
                     href={item.path}
-                    key={index}
-                    className="flex items-center font-medium text-sm hover:underline transition-colors"
                     prefetch={false}
+                    className="flex items-center font-medium text-sm hover:underline transition-colors"
                   >
                     {item.title}
                   </Link>

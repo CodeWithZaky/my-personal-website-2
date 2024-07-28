@@ -17,10 +17,10 @@ export function Sidebar() {
           {nav_links.map((item, index) => {
             return (
               <Link
+                key={String(index) + "nav_links_sidebar"}
                 href={item.path}
-                key={index}
-                className="flex items-center font-medium text-sm hover:underline transition-colors"
                 prefetch={false}
+                className="flex items-center font-medium text-sm hover:underline transition-colors"
               >
                 {item.title}
               </Link>
