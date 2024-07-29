@@ -1,5 +1,7 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
+import clsx from "clsx";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
@@ -22,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={clsx(inter.className, "scroll-smooth")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -32,6 +34,7 @@ export default function RootLayout({
           <main className="bg-primary/10 w-full">
             <Navbar />
             {children}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>

@@ -60,9 +60,9 @@ const WelcomeSection = () => {
           <span>A. Zaky Ubaidillah</span>
         </p>
         <p className="text-center md:text-start normal-sentences">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-          tellus luctusnec ullamcorper mattis, pulvinar dapibus leop llamcorper,
-          lorem ipsum.
+          Creating seamless and engaging web experiences with a blend of
+          creativity and technical expertise. From dynamic websites to
+          responsive designs, I turn ideas into reality.
         </p>
         <Button>Learn More</Button>
       </div>
@@ -76,7 +76,7 @@ const AboutSection = () => {
       <div className="flex flex-col justify-start items-center gap-5 text-center">
         <p className="medium-sentences">About Me</p>
         <p className="normal-sentences">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Developing With a Passion While Exploring The World.
         </p>
         <div className="bg-primary w-[100px] h-[2px]" />
       </div>
@@ -87,22 +87,36 @@ const AboutSection = () => {
           </h1>
           <div className="bg-primary w-[100px] h-[2px]" />
           <p className="normal-sentences">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem
-            ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus,
-            luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit.
+            I am a full-stack web developer with over 2 years of experience in
+            creating dynamic and responsive web applications. My expertise lies
+            in utilizing React.js and Next.js for front-end development, paired
+            with Tailwind CSS and its comprehensive component libraries to
+            ensure sleek and modern design. In my projects, I often leverage the
+            power of the T3 stack, which provides a robust foundation for
+            building scalable and efficient applications. My journey as a
+            developer is fueled by a passion for continuous learning and
+            innovation, always staying up-to-date with the latest industry
+            trends and technologies.
           </p>
           <Button className="w-fit">Contact Me</Button>
         </div>
         <div className="flex md:flex-row flex-col justify-end items-center gap-7 md:gap-3 w-full lg:w-[60%]">
           <div className="flex flex-col items-center gap-3 w-full md:w-[50%]">
             <p className="normal-sentences">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              Beyond my professional experience, I am currently a 5th-semester
+              student at Universitas Islam Lamongan, class of 2022. Balancing
+              academic pursuits with real-world projects, I aim to bridge the
+              gap between theoretical knowledge and practical application. My
+              university life is enriched with various projects and
+              collaborations that hone my skills and expand my understanding of
+              the field.
             </p>
             <p className="normal-sentences">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              I am dedicated to developing web solutions that not only meet
+              client requirements but also provide an exceptional user
+              experience. My goal is to contribute to the digital landscape by
+              delivering high-quality, user-centric applications that make a
+              difference.
             </p>
           </div>
           <div className="flex justify-start md:justify-end items-center w-full md:w-[50%]">
@@ -123,19 +137,19 @@ const AboutSection = () => {
 const ServiceSection = () => {
   const service_items = [
     {
-      description: "UI/UX Design",
+      description: "Frontend Web Development",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "Creating responsive interfaces using React.js, Next.js, and Tailwind CSS along with component libraries like shadcn UI, daisyUI, achernity UI, and more.",
     },
     {
-      description: "Digital Marketing",
+      description: "Backend Web Development",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "Developing robust backends with Next.js API, Next.js app router or pages router, tRPC, Prisma ORM, and databases such as PostgreSQL, MySQL, and SQLite.",
     },
     {
-      description: "Web Development",
+      description: "Fullstack Web Development",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
+        "Delivering end-to-end solutions using the T3 stack, with Next.js app router and pages router for comprehensive web development.",
     },
   ];
 
@@ -146,17 +160,17 @@ const ServiceSection = () => {
           {"What Services I'm Providing"}
         </p>
         <p className="text-center normal-sentences">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Comprehensive Web Development Solutions
         </p>
         <div className="bg-primary w-[100px] h-[2px]" />
       </div>
-      <div className="flex md:flex-row flex-col justify-between items-center gap-5">
+      <div className="flex md:flex-row flex-col justify-center items-stretch gap-5">
         {service_items.map((item, index) => {
           return (
             <Fragment key={String(index) + "service_items"}>
-              <Card className="flex flex-col justify-center items-center">
+              <Card className="flex flex-col justify-between items-center">
                 <CardHeader>
-                  <CardTitle className="flex justify-center items-center">
+                  <CardTitle className="flex justify-center items-center mb-2">
                     <MonitorSmartphone />
                   </CardTitle>
                   <CardDescription className="medium-sentences text-center">
@@ -184,7 +198,7 @@ const PortfolioSection = () => {
       <div className="flex flex-col justify-start items-center gap-5 w-[85%]">
         <p className="medium-sentences text-center">Latest Project</p>
         <p className="text-center normal-sentences">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Innovative Solutions for Modern Challenges
         </p>
         <div className="bg-primary w-[100px] h-[2px]" />
       </div>
