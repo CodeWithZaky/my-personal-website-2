@@ -1,4 +1,9 @@
-import { Instagram, Twitter } from "@/components/icons/social-media";
+import {
+  Instagram,
+  Linkedin,
+  Mail,
+  Twitter,
+} from "@/components/icons/social-media";
 import Link from "next/link";
 
 const Footer = () => {
@@ -9,7 +14,8 @@ const Footer = () => {
           <div className="flex flex-row justify-center lg:justify-start gap-4 w-full lg:w-1/3 normal-sentences">
             <Instagram />
             <Twitter />
-            <Instagram />
+            <Linkedin />
+            <Mail />
           </div>
           <Link
             href={"/"}
@@ -24,7 +30,7 @@ const Footer = () => {
       </div>
       <div className="border-t border-border w-full">
         <div className="flex justify-center items-center mx-auto border-t border-border w-[85%] h-[100px] normal-sentences">
-          <p>Copyright © 2024 My Personal Website</p>
+          <p>Copyright © 2024 CodeWithZaky</p>
         </div>
       </div>
     </footer>
