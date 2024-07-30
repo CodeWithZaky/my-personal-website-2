@@ -1,4 +1,9 @@
-import { Instagram, Twitter } from "@/components/icons/social-media";
+import {
+  Instagram,
+  Linkedin,
+  Mail,
+  Twitter,
+} from "@/components/icons/social-media";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -9,12 +14,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import clsx from "clsx";
-import {
-  CircleArrowRight,
-  Linkedin,
-  Mail,
-  MonitorSmartphone,
-} from "lucide-react";
+import { CircleArrowRight, MonitorSmartphone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
@@ -47,19 +47,19 @@ export default function Home() {
 
 const WelcomeSection = () => {
   return (
-    <div className="flex justify-start items-start gap-10 mx-auto py-24 w-[85%]">
-      <div className="lg:flex flex-col justify-start items-center gap-5 hidden py-16 h-auto">
+    <div className="mx-auto flex w-[85%] items-start justify-start gap-10 py-24">
+      <div className="hidden h-auto flex-col items-center justify-start gap-5 py-16 lg:flex">
         <Linkedin />
         <Mail />
         <Twitter />
         <Instagram />
       </div>
-      <div className="flex flex-col justify-start items-center md:items-start gap-7 lg:py-20 w-full md:w-[50%] lg:w-[70%]">
-        <p className="flex flex-col text-center md:text-start large-sentences">
+      <div className="flex w-full flex-col items-center justify-start gap-7 md:w-[50%] md:items-start lg:w-[70%] lg:py-20">
+        <p className="large-sentences flex flex-col text-center md:text-start">
           <span>{`I'm Web Developer`}</span>
           <span>A. Zaky Ubaidillah</span>
         </p>
-        <p className="text-center md:text-start normal-sentences">
+        <p className="normal-sentences text-center md:text-start">
           Creating seamless and engaging web experiences with a blend of
           creativity and technical expertise. From dynamic websites to
           responsive designs, I turn ideas into reality.
@@ -72,20 +72,20 @@ const WelcomeSection = () => {
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center space-y-14 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5 text-center">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start space-y-14 py-24">
+      <div className="flex flex-col items-center justify-start gap-5 text-center">
         <p className="medium-sentences">About Me</p>
         <p className="normal-sentences">
           Developing With a Passion While Exploring The World.
         </p>
-        <div className="bg-primary w-[100px] h-[2px]" />
+        <div className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="flex lg:flex-row flex-col justify-between items-center gap-5">
-        <div className="flex flex-col gap-4 w-full lg:w-[30%]">
+      <div className="grid grid-cols-1 items-start justify-start gap-24 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex w-full flex-col gap-4 md:col-span-2 lg:col-span-1">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
             Developing With a Passion While Exploring The World.
           </h1>
-          <div className="bg-primary w-[100px] h-[2px]" />
+          <div className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
             I am a full-stack web developer with over 2 years of experience in
             creating dynamic and responsive web applications. My expertise lies
@@ -98,35 +98,33 @@ const AboutSection = () => {
             innovation, always staying up-to-date with the latest industry
             trends and technologies.
           </p>
-          <Button className="w-fit">Contact Me</Button>
+          <Link href="/contact">
+            <Button className="w-fit">Contack Me</Button>
+          </Link>
         </div>
-        <div className="flex md:flex-row flex-col justify-end items-center gap-7 md:gap-3 w-full lg:w-[60%]">
-          <div className="flex flex-col items-center gap-3 w-full md:w-[50%]">
-            <p className="normal-sentences">
-              Beyond my professional experience, I am currently a 5th-semester
-              student at Universitas Islam Lamongan, class of 2022. Balancing
-              academic pursuits with real-world projects, I aim to bridge the
-              gap between theoretical knowledge and practical application. My
-              university life is enriched with various projects and
-              collaborations that hone my skills and expand my understanding of
-              the field.
-            </p>
-            <p className="normal-sentences">
-              I am dedicated to developing web solutions that not only meet
-              client requirements but also provide an exceptional user
-              experience. My goal is to contribute to the digital landscape by
-              delivering high-quality, user-centric applications that make a
-              difference.
-            </p>
-          </div>
-          <div className="flex justify-start md:justify-end items-center w-full md:w-[50%]">
-            <div className="border-image rounded-md w-[80%]">
-              <Image
-                src={Section1Bg1}
-                alt="section 1 bg 1"
-                className="rounded-md"
-              />
-            </div>
+        <div className="flex w-full flex-col items-center gap-3">
+          <p className="normal-sentences">
+            Beyond my professional experience, I am currently a 5th-semester
+            student at Universitas Islam Lamongan, class of 2022. Balancing
+            academic pursuits with real-world projects, I aim to bridge the gap
+            between theoretical knowledge and practical application. My
+            university life is enriched with various projects and collaborations
+            that hone my skills and expand my understanding of the field.
+          </p>
+          <p className="normal-sentences">
+            I am dedicated to developing web solutions that not only meet client
+            requirements but also provide an exceptional user experience. My
+            goal is to contribute to the digital landscape by delivering
+            high-quality, user-centric applications that make a difference.
+          </p>
+        </div>
+        <div className="flex w-full items-center justify-start md:justify-end">
+          <div className="border-image rounded-md">
+            <Image
+              src={Section1Bg1}
+              alt="section 1 bg 1"
+              className="rounded-md"
+            />
           </div>
         </div>
       </div>
@@ -154,30 +152,30 @@ const ServiceSection = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-start items-center gap-10 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-10 py-24">
+      <div className="flex flex-col items-center justify-start gap-5">
         <p className="medium-sentences text-center">
           {"What Services I'm Providing"}
         </p>
-        <p className="text-center normal-sentences">
+        <p className="normal-sentences text-center">
           Comprehensive Web Development Solutions
         </p>
-        <div className="bg-primary w-[100px] h-[2px]" />
+        <div className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="flex md:flex-row flex-col justify-center items-stretch gap-5">
+      <div className="flex flex-col items-stretch justify-center gap-5 md:flex-row">
         {service_items.map((item, index) => {
           return (
             <Fragment key={String(index) + "service_items"}>
-              <Card className="flex flex-col justify-between items-center">
+              <Card className="flex flex-col items-center justify-between">
                 <CardHeader>
-                  <CardTitle className="flex justify-center items-center mb-2">
+                  <CardTitle className="mb-2 flex items-center justify-center">
                     <MonitorSmartphone />
                   </CardTitle>
                   <CardDescription className="medium-sentences text-center">
                     {item.description}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="mx-2 md:mx-3 lg:mx-5 text-center normal-sentences">
+                <CardContent className="normal-sentences mx-2 text-center md:mx-3 lg:mx-5">
                   {item.content}
                 </CardContent>
                 <CardFooter className="flex justify-between">
@@ -194,19 +192,19 @@ const ServiceSection = () => {
 
 const PortfolioSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center gap-10 mx-auto py-24">
-      <div className="flex flex-col justify-start items-center gap-5 w-[85%]">
+    <div className="mx-auto flex flex-col items-center justify-start gap-10 py-24">
+      <div className="flex w-[85%] flex-col items-center justify-start gap-5">
         <p className="medium-sentences text-center">Latest Project</p>
-        <p className="text-center normal-sentences">
+        <p className="normal-sentences text-center">
           Innovative Solutions for Modern Challenges
         </p>
-        <div className="bg-primary w-[100px] h-[2px]" />
+        <div className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="flex md:flex-row flex-col justify-between items-center gap-5 px-2 w-full">
+      <div className="flex w-full flex-col items-center justify-between gap-5 px-2 md:flex-row">
         {[1, 2, 3].map((_, index) => {
           return (
             <Fragment key={String(index) + "portfolio_items"}>
-              <div className="border border-border rounded-xl">
+              <div className="rounded-xl border border-border">
                 <Image src={gedongarum} alt="image" className="rounded-xl" />
               </div>
             </Fragment>
