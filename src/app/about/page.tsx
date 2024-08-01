@@ -1,14 +1,9 @@
 import Section1Bg1 from "@/assets/section-1-bg1.jpg";
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitter,
-} from "@/components/icons/social-media";
 import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { Fragment } from "react";
 
 const AboutPage = () => {
@@ -76,7 +71,7 @@ const AboutSection = () => {
           </p>
           <div className="flex flex-col gap-2 normal-sentences">
             <p>{"Let's Connect."}</p>
-            <p>contact@domain.com</p>
+            <p>{DATA.contact.email}</p>
           </div>
         </div>
 
@@ -98,11 +93,14 @@ const AboutSection = () => {
             a meaningful impact on the digital landscape with high-quality,
             user-centric applications.
           </p>
-          <div className="flex gap-3 mt-3">
-            <Instagram />
-            <Twitter />
-            <Linkedin />
-            <Mail />
+          <div className="flex gap-3 md:gap-5 mt-3">
+            {DATA.contact.social.map((contact_data, index) => (
+              <Fragment key={index}>
+                <Link href={contact_data.url} target="_blank">
+                  {contact_data.icon}
+                </Link>
+              </Fragment>
+            ))}
           </div>
         </div>
 
