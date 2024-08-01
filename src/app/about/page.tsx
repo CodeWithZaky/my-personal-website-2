@@ -6,6 +6,7 @@ import {
   Twitter,
 } from "@/components/icons/social-media";
 import { Button } from "@/components/ui/button";
+import { DATA } from "@/data/resume";
 import clsx from "clsx";
 import Image from "next/image";
 import { Fragment } from "react";
@@ -36,10 +37,10 @@ export default AboutPage;
 
 const HeaderSection = () => {
   return (
-    <div className="flex justify-center items-center mx-auto py-32 w-[85%] large-sentences">
-      <div className="flex flex-col justify-center items-center gap-3 w-fit">
+    <div className="large-sentences mx-auto flex w-[85%] items-center justify-center py-32">
+      <div className="flex w-fit flex-col items-center justify-center gap-3">
         <h1>About Me</h1>
-        <span className="bg-primary mx-auto w-[50%] h-[2px]" />
+        <span className="mx-auto h-[2px] w-[50%] bg-primary" />
       </div>
     </div>
   );
@@ -47,93 +48,85 @@ const HeaderSection = () => {
 
 const AboutSection = () => {
   return (
-    <div className="flex justify-start items-center space-y-14 mx-auto py-24 w-[85%]">
-      <div className="justify-start items-start gap-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex justify-start md:justify-end items-center w-full">
+    <div className="mx-auto flex w-[85%] flex-col space-y-14 py-24">
+      <div className="grid grid-cols-1 gap-24 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex w-full items-center justify-center">
           <div className="border-image rounded-md">
             <Image
               src={Section1Bg1}
-              alt="section 1 bg 1"
+              alt="Section 1 Background"
               className="rounded-md"
             />
           </div>
         </div>
-        <div className="flex flex-col gap-4 w-full">
+
+        <div className="flex flex-col gap-4">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
-            Developing With a Passion While Exploring The World.
+            Developing with Passion and Curiosity
           </h1>
-          <span className="bg-primary w-[100px] h-[2px]" />
+          <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
-            I am a full-stack web developer with over 2 years of experience in
-            creating dynamic and responsive web applications. My expertise lies
-            in utilizing React.js and Next.js for front-end development, paired
-            with Tailwind CSS and its comprehensive component libraries to
-            ensure sleek and modern design. In my projects, I often leverage the
-            power of the T3 stack, which provides a robust foundation for
-            building scalable and efficient applications. My journey as a
-            developer is fueled by a passion for continuous learning and
-            innovation, always staying up-to-date with the latest industry
-            trends and technologies.
+            As a full-stack web developer with over two years of experience, I
+            specialize in crafting dynamic, responsive web applications. My
+            skill set includes React.js and Next.js for front-end development,
+            complemented by Tailwind CSS and a range of component libraries for
+            sleek, modern design. I leverage the T3 stack for building scalable,
+            efficient applications, and stay updated with the latest industry
+            trends.
           </p>
-          <div className="flex flex-col gap-2 normal-sentences">
-            <p>{"Let's talk with me."}</p>
+          <div className="normal-sentences flex flex-col gap-2">
+            <p>{"Let's Connect."}</p>
             <p>contact@domain.com</p>
           </div>
         </div>
-        <div className="flex flex-col items-start gap-3 md:col-span-2 lg:col-span-1 w-full">
+
+        <div className="flex w-full flex-col gap-3 md:col-span-2 lg:col-span-1">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
-            I Create Products Not Just Arts
+            Balancing Academics with Real-World Projects
           </h1>
-          <span className="bg-primary w-[100px] h-[2px]" />
+          <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
-            Beyond my professional experience, I am currently a 5th-semester
-            student at Universitas Islam Lamongan, class of 2022. Balancing
-            academic pursuits with real-world projects, I aim to bridge the gap
-            between theoretical knowledge and practical application. My
-            university life is enriched with various projects and collaborations
-            that hone my skills and expand my understanding of the field.
+            Currently a 5th-semester student at Universitas Islam Lamongan,
+            class of 2022, I balance academic learning with real-world projects.
+            My university experience is rich with hands-on projects and
+            collaborations that enhance my skills and deepen my practical
+            understanding.
           </p>
           <p className="normal-sentences">
-            I am dedicated to developing web solutions that not only meet client
-            requirements but also provide an exceptional user experience. My
-            goal is to contribute to the digital landscape by delivering
-            high-quality, user-centric applications that make a difference.
+            My focus is on developing web solutions that exceed client
+            expectations and deliver exceptional user experiences. I aim to make
+            a meaningful impact on the digital landscape with high-quality,
+            user-centric applications.
           </p>
-          <div className="flex gap-3 mt-3 w-full">
+          <div className="mt-3 flex gap-3">
             <Instagram />
             <Twitter />
             <Linkedin />
             <Mail />
           </div>
         </div>
+
         <div className="flex flex-col gap-3">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
-            I Create Products Not Just Arts
+            Crafting Solutions for Real-World Challenges
           </h1>
-          <span className="bg-primary w-[100px] h-[2px]" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Lorem
-            ipsum dolor sit amet, consectetur adipisci elit. Ut elit tellus,
-            luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          <span className="h-[2px] w-[100px] bg-primary" />
+          <p className="normal-sentences">
+            My passion lies in creating solutions that address real-world
+            challenges. I focus on understanding core issues and developing
+            innovative strategies to tackle them, leveraging technology to make
+            a positive impact with intuitive, user-friendly products.
           </p>
           <Button className="w-fit">Download CV</Button>
         </div>
-        <div className="space-y-7 lg:col-span-2">
-          <div className="flex flex-wrap justify-start items-start gap-3 lg:w-[75%]">
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Typescript</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Typescri</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">
-              Typescridddpt
-            </p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Typescript</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Typescrt</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Typipt</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">jfnajfjnj</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">sfask</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Tyescript</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">Typdescript</p>
-            <p className="bg-primary px-4 py-2 rounded-xl w-fit">sfask</p>
+
+        <div className="lg:col-span-2">
+          <div className="flex flex-wrap gap-3 lg:w-[75%]">
+            {DATA.skills.map((skill) => (
+              <p key={skill} className="w-fit rounded-xl bg-primary px-4 py-2">
+                {skill}
+              </p>
+            ))}
           </div>
         </div>
       </div>

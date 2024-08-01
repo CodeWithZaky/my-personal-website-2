@@ -13,8 +13,14 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { DATA } from "@/data/resume";
 import clsx from "clsx";
-import { CircleArrowRight, MonitorSmartphone } from "lucide-react";
+import {
+  CircleArrowRight,
+  Github,
+  Globe,
+  MonitorSmartphone,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
@@ -47,22 +53,21 @@ export default function Home() {
 
 const WelcomeSection = () => {
   return (
-    <div className="flex justify-start items-start gap-10 mx-auto py-24 w-[85%]">
-      <div className="lg:flex flex-col justify-start items-center gap-5 hidden py-16 h-auto">
+    <div className="mx-auto flex w-[85%] items-start justify-start gap-10 py-24">
+      <div className="hidden h-auto flex-col items-center justify-start gap-5 py-16 lg:flex">
         <Linkedin />
         <Mail />
         <Twitter />
         <Instagram />
       </div>
-      <div className="flex flex-col justify-start items-center md:items-start gap-7 lg:py-20 w-full md:w-[50%] lg:w-[70%]">
-        <p className="flex flex-col text-center md:text-start large-sentences">
+      <div className="flex w-full flex-col items-center justify-start gap-7 md:w-[50%] md:items-start lg:w-[70%] lg:py-20">
+        <p className="large-sentences flex flex-col text-center md:text-start">
           <span>{`I'm Web Developer`}</span>
           <span>A. Zaky Ubaidillah</span>
         </p>
-        <p className="text-center md:text-start normal-sentences">
-          Creating seamless and engaging web experiences with a blend of
-          creativity and technical expertise. From dynamic websites to
-          responsive designs, I turn ideas into reality.
+        <p className="normal-sentences text-center md:text-start">
+          Creating seamless web experiences with creativity and technical skill.
+          From dynamic websites to responsive designs, I bring ideas to life.
         </p>
         <Button>Learn More</Button>
       </div>
@@ -72,53 +77,41 @@ const WelcomeSection = () => {
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center space-y-14 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5 text-center">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start space-y-14 py-24">
+      <div className="flex flex-col items-center justify-start gap-5 text-center">
         <p className="medium-sentences">About Me</p>
         <p className="normal-sentences">
-          Developing With a Passion While Exploring The World.
+          Passionate Developer Exploring the World.
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="justify-start items-start gap-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex flex-col gap-4 md:col-span-2 lg:col-span-1 w-full">
+      <div className="grid grid-cols-1 items-start justify-start gap-24 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex w-full flex-col gap-4 md:col-span-2 lg:col-span-1">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
-            Developing With a Passion While Exploring The World.
+            Passionate Developer Exploring the World.
           </h1>
-          <span className="bg-primary w-[100px] h-[2px]" />
+          <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
-            I am a full-stack web developer with over 2 years of experience in
-            creating dynamic and responsive web applications. My expertise lies
-            in utilizing React.js and Next.js for front-end development, paired
-            with Tailwind CSS and its comprehensive component libraries to
-            ensure sleek and modern design. In my projects, I often leverage the
-            power of the T3 stack, which provides a robust foundation for
-            building scalable and efficient applications. My journey as a
-            developer is fueled by a passion for continuous learning and
-            innovation, always staying up-to-date with the latest industry
-            trends and technologies.
+            Full-stack developer with 2+ years of experience creating dynamic,
+            responsive web apps. Expertise in React.js, Next.js, and Tailwind
+            CSS for sleek, modern designs.
           </p>
           <Link href="/contact">
-            <Button className="w-fit">Contack Me</Button>
+            <Button className="w-fit">Contact Me</Button>
           </Link>
         </div>
-        <div className="flex flex-col items-center gap-3 w-full">
+        <div className="flex w-full flex-col items-center gap-3">
           <p className="normal-sentences">
-            Beyond my professional experience, I am currently a 5th-semester
-            student at Universitas Islam Lamongan, class of 2022. Balancing
-            academic pursuits with real-world projects, I aim to bridge the gap
-            between theoretical knowledge and practical application. My
-            university life is enriched with various projects and collaborations
-            that hone my skills and expand my understanding of the field.
+            I use the T3 stack for scalable, efficient apps. Passionate about
+            continuous learning, staying current with industry trends and tech.
           </p>
           <p className="normal-sentences">
-            I am dedicated to developing web solutions that not only meet client
-            requirements but also provide an exceptional user experience. My
-            goal is to contribute to the digital landscape by delivering
-            high-quality, user-centric applications that make a difference.
+            Dedicated to developing web solutions that meet client needs and
+            deliver exceptional user experiences. Committed to making a
+            difference in the digital landscape.
           </p>
         </div>
-        <div className="flex justify-start md:justify-end items-center w-full">
+        <div className="flex w-full items-center justify-start md:justify-end">
           <div className="border-image rounded-md">
             <Image
               src={Section1Bg1}
@@ -133,58 +126,36 @@ const AboutSection = () => {
 };
 
 const ServiceSection = () => {
-  const service_items = [
-    {
-      description: "Frontend Web Development",
-      content:
-        "Creating responsive interfaces using React.js, Next.js, and Tailwind CSS along with component libraries like shadcn UI, daisyUI, achernity UI, and more.",
-    },
-    {
-      description: "Backend Web Development",
-      content:
-        "Developing robust backends with Next.js API, Next.js app router or pages router, tRPC, Prisma ORM, and databases such as PostgreSQL, MySQL, and SQLite.",
-    },
-    {
-      description: "Fullstack Web Development",
-      content:
-        "Delivering end-to-end solutions using the T3 stack, with Next.js app router and pages router for comprehensive web development.",
-    },
-  ];
-
   return (
-    <div className="flex flex-col justify-start items-center gap-10 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5">
-        <p className="medium-sentences text-center">
-          {"What Services I'm Providing"}
-        </p>
-        <p className="text-center normal-sentences">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-10 py-24">
+      <div className="flex flex-col items-center justify-start gap-5">
+        <p className="medium-sentences text-center">My Services</p>
+        <p className="normal-sentences text-center">
           Comprehensive Web Development Solutions
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="flex md:flex-row flex-col justify-center items-stretch gap-5">
-        {service_items.map((item, index) => {
-          return (
-            <Fragment key={String(index) + "service_items"}>
-              <Card className="flex flex-col justify-between items-center">
-                <CardHeader>
-                  <CardTitle className="flex justify-center items-center mb-2">
-                    <MonitorSmartphone />
-                  </CardTitle>
-                  <CardDescription className="medium-sentences text-center">
-                    {item.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="mx-2 md:mx-3 lg:mx-5 text-center normal-sentences">
-                  {item.content}
-                </CardContent>
-                <CardFooter className="flex justify-between">
-                  <CircleArrowRight />
-                </CardFooter>
-              </Card>
-            </Fragment>
-          );
-        })}
+      <div className="flex flex-col items-stretch justify-center gap-5 md:flex-row">
+        {DATA.services.map((item, index) => (
+          <Fragment key={index}>
+            <Card className="flex flex-col items-center justify-between md:w-1/3">
+              <CardHeader>
+                <CardTitle className="mb-2 flex items-center justify-center">
+                  <MonitorSmartphone />
+                </CardTitle>
+                <CardDescription className="medium-sentences text-center">
+                  {item.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="normal-sentences mx-2 text-center md:mx-3 lg:mx-5">
+                {item.content}
+              </CardContent>
+              <CardFooter className="flex justify-between">
+                <CircleArrowRight />
+              </CardFooter>
+            </Card>
+          </Fragment>
+        ))}
       </div>
     </div>
   );
@@ -192,44 +163,48 @@ const ServiceSection = () => {
 
 const PortfolioSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center gap-10 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-14 py-24">
+      <div className="flex flex-col items-center justify-start gap-5">
         <p className="medium-sentences text-center">Latest Project</p>
-        <p className="text-center normal-sentences">
+        <p className="normal-sentences text-center">
           Innovative Solutions for Modern Challenges
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="gap-16 grid grid-cols-1 lg:grid-cols-3 px-2">
+      <div className="grid grid-cols-1 gap-10 px-2 lg:grid-cols-3">
         {Array(3)
           .fill(null)
           .map((_, index) => {
             return (
               <Fragment key={String(index) + "portfolio_items"}>
-                <div className="space-y-3 border border-border rounded-xl">
+                <div className="space-y-2 rounded-xl">
                   <Image src={gedongarum} alt="image" className="rounded-xl" />
-                  <h1>Chat Collect</h1>
-                  <h1>Jan 2024 - Feb 2024</h1>
-                  <h1>
-                    With the release of the OpenAI GPT Store, I decided to build
-                    a SaaS which allows users to collect email addresses from
-                    their GPT users. This is a great way to build an audience
-                    and monetize your GPT API usage.
-                  </h1>
-                  <div className="flex flex-wrap gap-2 w-[90%]">
-                    <p className="bg-primary px-4 rounded-lg py1">Next js</p>
-                    <p className="bg-primary px-4 rounded-lg py1">
+                  <div className="py-1">
+                    <h1>Chat Collect</h1>
+                    <p className="text-muted-foreground">Jan 2024 - Feb 2024</p>
+                    <p>
+                      With the release of the OpenAI GPT Store, I decided to
+                      build a SaaS which allows users to collect email addresses
+                      from their GPT users. This is a great way to build an
+                      audience and monetize your GPT API usage.
+                    </p>
+                  </div>
+                  <div className="flex w-[90%] flex-wrap gap-2 py-1">
+                    <p className="py1 rounded-lg bg-primary px-4">Next js</p>
+                    <p className="py1 rounded-lg bg-primary px-4">
                       Tailwind css
                     </p>
-                    <p className="bg-primary px-4 rounded-lg py1">Shadcn ui</p>
-                    <p className="bg-primary px-4 rounded-lg py1">Typescript</p>
-                    <p className="bg-primary px-4 rounded-lg py1">Javascript</p>
+                    <p className="py1 rounded-lg bg-primary px-4">Shadcn ui</p>
+                    <p className="py1 rounded-lg bg-primary px-4">Typescript</p>
+                    <p className="py1 rounded-lg bg-primary px-4">Javascript</p>
                   </div>
-                  <div className="flex gap-5">
-                    <p className="bg-foreground px-4 rounded-lg text-background py1">
+                  <div className="flex gap-5 py-1">
+                    <p className="flex gap-2 rounded-lg bg-foreground px-4 py-1 text-background">
+                      <Globe width={20} />
                       Website
                     </p>
-                    <p className="bg-foreground px-4 rounded-lg text-background py1">
+                    <p className="flex gap-2 rounded-lg bg-foreground px-4 py-1 text-background">
+                      <Github width={20} />
                       Source
                     </p>
                   </div>
@@ -239,7 +214,7 @@ const PortfolioSection = () => {
           })}
       </div>
       <Link href={"/portfolio"} className="group">
-        <Button>
+        <Button className="px-7">
           see more
           <span className="pl-2 transition-all group-hover:translate-x-2">
             {"->"}

@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="w-full">
       <div className="mx-auto py-10 w-[85%]">
         <div className="flex lg:flex-row flex-col justify-evenly lg:justify-between items-center w-full h-[200px]">
-          <div className="flex flex-row justify-center lg:justify-start gap-4 w-full lg:w-1/3 normal-sentences">
+          <div className="flex flex-row justify-center lg:justify-start gap-7 w-full lg:w-1/3 normal-sentences">
             <Instagram />
             <Twitter />
             <Linkedin />
