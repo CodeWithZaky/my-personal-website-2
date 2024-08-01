@@ -67,7 +67,7 @@ export const DATA = {
     },
   ],
   contact: {
-    email: "ahmadzakyubaidillah@example.com",
+    email: "ahmadzakyubaidillah@gmail.com",
     social: [
       {
         title: "LinkedIn",
