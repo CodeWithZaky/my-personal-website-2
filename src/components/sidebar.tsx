@@ -3,6 +3,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { DATA } from "@/data/resume";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { ModeToggle } from "./mode-toggle";
 
 export function Sidebar() {
   return (
@@ -14,6 +15,7 @@ export function Sidebar() {
       </SheetTrigger>
       <SheetContent>
         <nav className="flex flex-col justify-start items-end gap-10 md:hidden mt-11">
+          <ModeToggle />
           {DATA.navbar.map((item, index) => {
             return (
               <Link
