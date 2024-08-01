@@ -1,9 +1,12 @@
-export const Instagram = () => {
+export const Instagram = ({
+  className = "w-6 h-6",
+}: {
+  className?: string;
+}) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -18,12 +21,11 @@ export const Instagram = () => {
   );
 };
 
-export const Twitter = () => {
+export const Twitter = ({ className = "w-6 h-6" }: { className?: string }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -36,12 +38,11 @@ export const Twitter = () => {
   );
 };
 
-export const Linkedin = () => {
+export const Linkedin = ({ className = "w-6 h-6" }: { className?: string }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
@@ -56,12 +57,11 @@ export const Linkedin = () => {
   );
 };
 
-export const Mail = () => {
+export const Mail = ({ className = "w-6 h-6" }: { className?: string }) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
