@@ -13,20 +13,19 @@ export function Sidebar() {
         </Button>
       </SheetTrigger>
       <SheetContent>
-        <nav className="mt-11 flex flex-col items-end justify-start gap-10 md:hidden">
+        <nav className="flex flex-col justify-start items-end gap-10 md:hidden mt-11">
           {DATA.navbar.map((item, index) => {
             return (
               <Link
                 key={String(index) + "nav_links_sidebar"}
                 href={item.path}
                 prefetch={false}
-                className="flex items-center text-sm font-medium transition-colors hover:underline"
+                className="flex items-center font-medium text-sm hover:underline transition-colors"
               >
                 {item.title}
               </Link>
             );
           })}
-          <Button>Learn More</Button>
         </nav>
       </SheetContent>
     </Sheet>

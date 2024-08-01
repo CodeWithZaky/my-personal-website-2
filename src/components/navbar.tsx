@@ -6,35 +6,35 @@ import { Button } from "./ui/button";
 
 export default function Navbar() {
   return (
-    <header className="sticky inset-x-0 top-0 z-50 w-full backdrop-blur-sm">
+    <header className="top-0 z-50 sticky inset-x-0 backdrop-blur-sm w-full">
       <nav className="mx-auto w-[85%]">
-        <div className="flex h-14 items-center justify-between">
-          <Link
-            href="/"
-            className="flex w-1/3 items-center justify-start"
-            prefetch={false}
-          >
-            <MyLogo />
-            <span className="sr-only">Acme Inc</span>
-          </Link>
-          <nav className="hidden w-1/3 justify-center gap-5 md:flex">
+        <div className="flex justify-between items-center h-14">
+          <div className="flex justify-start items-center w-1/3">
+            <Link href="/" prefetch={false}>
+              <MyLogo />
+              <span className="sr-only">Acme Inc</span>
+            </Link>
+          </div>
+          <nav className="md:flex justify-center gap-5 hidden w-1/3">
             {DATA.navbar.map((item, index) => {
               return (
                 <Link
                   key={String(index) + "nav_links_navbar"}
                   href={item.path}
                   prefetch={false}
-                  className="flex items-center text-sm font-medium transition-colors hover:underline"
+                  className="flex items-center font-medium text-sm hover:underline transition-colors"
                 >
                   {item.title}
                 </Link>
               );
             })}
           </nav>
-          <div className="flex w-1/3 items-center justify-end gap-4">
-            <div className="hidden items-center justify-center space-x-4 md:flex">
+          <div className="flex justify-end items-center gap-4 w-1/3">
+            <div className="md:flex justify-center items-center space-x-4 hidden">
               <ModeToggle />
-              <Button size="sm">Hire Me</Button>
+              <Link href={"/contact"}>
+                <Button size="sm">Hire Me</Button>
+              </Link>
             </div>
             <div className="block md:hidden">
               <Sidebar />
@@ -49,7 +49,7 @@ export default function Navbar() {
 function MyLogo() {
   return (
     <svg
-      className="rounded-md bg-primary dark:bg-transparent"
+      className="bg-primary dark:bg-transparent rounded-md"
       width="24"
       height="24"
       viewBox="0 0 100 100"

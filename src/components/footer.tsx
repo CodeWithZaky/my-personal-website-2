@@ -1,10 +1,6 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  Twitter,
-} from "@/components/icons/social-media";
+import { DATA } from "@/data/resume";
 import Link from "next/link";
+import { Fragment } from "react";
 
 const Footer = () => {
   return (
@@ -12,10 +8,13 @@ const Footer = () => {
       <div className="mx-auto py-10 w-[85%]">
         <div className="flex lg:flex-row flex-col justify-evenly lg:justify-between items-center w-full h-[200px]">
           <div className="flex flex-row justify-center lg:justify-start gap-7 w-full lg:w-1/3 normal-sentences">
-            <Instagram />
-            <Twitter />
-            <Linkedin />
-            <Mail />
+            {DATA.contact.social.map((contact_data, index) => (
+              <Fragment key={index}>
+                <Link href={contact_data.url} target="_blank">
+                  {contact_data.icon}
+                </Link>
+              </Fragment>
+            ))}
           </div>
           <Link
             href={"/"}

@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { DATA } from "@/data/resume";
 import clsx from "clsx";
 import { ExternalLink } from "lucide-react";
+import Link from "next/link";
 import { Fragment } from "react";
 
 const ContactPage = () => {
@@ -39,47 +40,20 @@ const HeaderSection = () => {
   );
 };
 
-const contact_items = [
-  {
-    title: DATA.contact.social.Instagram.title,
-    name: DATA.contact.social.Instagram.name,
-    icon: DATA.contact.social.Instagram.icon,
-    url: DATA.contact.social.Instagram.url,
-  },
-  {
-    title: DATA.contact.social.LinkedIn.title,
-    name: DATA.contact.social.LinkedIn.name,
-    icon: DATA.contact.social.LinkedIn.icon,
-    url: DATA.contact.social.LinkedIn.url,
-  },
-  {
-    title: DATA.contact.social.GitHub.title,
-    name: DATA.contact.social.GitHub.name,
-    icon: DATA.contact.social.GitHub.icon,
-    url: DATA.contact.social.GitHub.url,
-  },
-  {
-    title: DATA.contact.social.email.title,
-    name: DATA.contact.social.email.name,
-    icon: DATA.contact.social.email.icon,
-    url: DATA.contact.social.email.url,
-  },
-];
-
 const ContactSection = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-20 mx-auto py-20 w-[85%] text-center">
       <div className="justify-center items-center gap-5 lg:gap-10 grid grid-cols-2 lg:grid-cols-4 w-full text-center">
-        {contact_items.map((item, index) => {
+        {DATA.contact.social.map((item, index) => {
           return (
             <Fragment key={String(index) + "contact-items"}>
               <Card className="flex flex-col justify-between items-center gap-3 px-10 py-5">
                 <>{item.icon}</>
                 <p className="normal-sentences">{item.title}</p>
                 <p className="normal-sentences">{item.name}</p>
-                <a href={item.url} target="_blank">
+                <Link href={item.url} target="_blank">
                   <ExternalLink />
-                </a>
+                </Link>
               </Card>
             </Fragment>
           );

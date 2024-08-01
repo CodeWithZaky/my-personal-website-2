@@ -72,7 +72,7 @@ const PortfolioSection = () => {
                 <div className="flex flex-wrap gap-2 w-[90%] normal-sentences">
                   {item.technologies.map((technologie, index) => (
                     <Fragment key={index}>
-                      <p className="bg-primary px-4 rounded-lg py1">
+                      <p className="bg-primary px-4 rounded-lg text-background dark:text-foreground py1">
                         {technologie}
                       </p>
                     </Fragment>
@@ -81,7 +81,7 @@ const PortfolioSection = () => {
                 <div className="flex gap-5 py-1 normal-sentences">
                   {item.links.map((link, index) => (
                     <Fragment key={String(index) + "link"}>
-                      <Link href={link.href}>
+                      <Link href={link.href} target="_blank">
                         <p className="flex gap-2 bg-foreground px-4 py-1 rounded-lg text-background">
                           {link.icon}
                           {link.type}
