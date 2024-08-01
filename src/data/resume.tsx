@@ -3,7 +3,7 @@ import MatrixCalculator from "@/assets/matrix-calculator.png";
 import MyPortfolioV1 from "@/assets/my-portfolio-v1.png";
 import NumberConverter from "@/assets/number-converter.png";
 import { Instagram, Linkedin, Mail } from "@/components/icons/social-media";
-import { Database, Github, Globe, MonitorCog, Palette } from "lucide-react";
+import { Database, Github, Globe, Palette, Server } from "lucide-react";
 
 export const DATA = {
   name: "Ahmad Zaky Ubaidillah",
@@ -57,7 +57,7 @@ export const DATA = {
       description: "Backend Web Development",
       content:
         "Robust backends with Next.js API, tRPC, Prisma ORM, and databases like PostgreSQL, MySQL, and SQLite.",
-      icon: <MonitorCog />,
+      icon: <Server />,
     },
     {
       description: "Fullstack Web Development",
