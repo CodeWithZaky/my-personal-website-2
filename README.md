@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ahmad Zaky Ubaidillah
 
-## Getting Started
+Creating seamless web experiences with creativity and technical skill. From dynamic websites to responsive designs, I bring ideas to life.
 
-First, run the development server:
+## Skills
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Languages & Frameworks:** Javascript, Typescript, React, NextJs
+- **Libraries & Tools:** Trpc, RestApi, Tailwind, ShadcnUI, MagicUI, DaisyUI
+- **Databases:** Postgres, MySql, SQLite
+- **Fullstack Development:** T3Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Navigation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [Home](https://codewithzaky.vercel.app/)
+- [About](https://codewithzaky.vercel.app/about)
+- [Portfolio](https://codewithzaky.vercel.app/portfolio)
+- [Contact](https://codewithzaky.vercel.app/contact)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Services
 
-## Learn More
+### Frontend Web Development
 
-To learn more about Next.js, take a look at the following resources:
+Responsive interfaces using React.js, Next.js, and Tailwind CSS with libraries like shadcn UI, daisyUI, and MagicUI.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Backend Web Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Robust backends with Next.js API, tRPC, Prisma ORM, and databases like PostgreSQL, MySQL, and SQLite.
 
-## Deploy on Vercel
+### Fullstack Web Development
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+End-to-end solutions with the T3 stack and Next.js for comprehensive web development.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+
+- **Email:** [ahmadzakyubaidillah@gmail.com](mailto:ahmadzakyubaidillah@gmail.com)
+- **LinkedIn:** [Ahmad Zaky Ubaidillah](https://www.linkedin.com/in/ahmad-zaky-ubaidillah)
+- **Instagram:** [zaky0bed](https://www.instagram.com/zaky0bed)
+- **GitHub:** [CodeWithZaky](https://github.com/CodeWithZaky)
+
+## Projects
+
+### [Gedongarum](https://gedongarum.vercel.app/)
+
+- **Dates:** Feb 2024 - Jul 2024
+- **Category:** College Project (4th semester)
+- **Description:** An informational website about the hometown village of the student.
+- **Technologies:** NEXT JS, TAILWIND CSS, SHADCN UI
+- **Source:** [GitHub](https://github.com/CodeWithZaky/informasi-gedongarum)
+
+### [Matrix Calculator](https://matrixcalculator.vercel.app)
+
+- **Dates:** Feb 2023 - Jul 2023
+- **Category:** College Project (2nd semester)
+- **Description:** An application for the addition, subtraction, and multiplication of matrices.
+- **Technologies:** NEXT JS, TAILWIND CSS, DAISYUI, SWEETALERT2
+- **Source:** [GitHub](https://github.com/CodeWithZaky/matrix-calculator)
+
+### [Number Converter](https://number-converter-2.vercel.app)
+
+- **Dates:** Feb 2023 - Jul 2023
+- **Category:** College Project (2nd semester)
+- **Description:** An application for converting decimal, binary, octal, and hexadecimal numbers.
+- **Technologies:** NEXT JS, TAILWIND CSS, DAISYUI, SWEETALERT2
+- **Source:** [GitHub](https://github.com/CodeWithZaky/number-converter)
+
+### [My Personal Website](https://zaky.vercel.app)
+
+- **Dates:** Apr 2023 - Sep 2023
+- **Category:** Personal Project (Portfolio)
+- **Description:** Personal website for information about me, especially in the field of technology.
+- **Technologies:** NEXT JS, TAILWIND CSS, FRAMERMOTION
+- **Source:** [GitHub](https://github.com/CodeWithZaky/my-personal-website)
