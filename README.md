@@ -63,10 +63,10 @@ End-to-end solutions with the T3 stack and Next.js for comprehensive web develop
 - **Technologies:** NEXT JS, TAILWIND CSS, DAISYUI, SWEETALERT2
 - **Source:** [GitHub](https://github.com/CodeWithZaky/number-converter)
 
-### [My Personal Website](https://zaky.vercel.app)
+### [My Personal Website V1](https://zaky.vercel.app)
 
 - **Dates:** Apr 2023 - Sep 2023
-- **Category:** Personal Project (Portfolio)
+- **Category:** Personal Project (Portfolio V1)
 - **Description:** Personal website for information about me, especially in the field of technology.
 - **Technologies:** NEXT JS, TAILWIND CSS, FRAMERMOTION
 - **Source:** [GitHub](https://github.com/CodeWithZaky/my-personal-website)
