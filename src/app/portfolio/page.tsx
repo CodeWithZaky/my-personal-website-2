@@ -52,8 +52,8 @@ const PortfolioSection = () => {
         {DATA.projects.map((item, index) => {
           return (
             <Fragment key={String(index) + "portfolio_items"}>
-              <div className="flex flex-col justify-between space-y-3 rounded-xl">
-                <Image src={item.image} alt="image" className="rounded-xl" />
+              <div className="flex flex-col justify-between space-y-3 rounded-md">
+                <Image src={item.image} alt="image" className="rounded-md" />
                 <h1 className="medium-sentences">{item.title}</h1>
                 <p className="text-muted-foreground">
                   {item.dates}
@@ -72,7 +72,7 @@ const PortfolioSection = () => {
                 <div className="flex flex-wrap gap-2 w-[90%] normal-sentences">
                   {item.technologies.map((technologie, index) => (
                     <Fragment key={index}>
-                      <p className="bg-primary px-4 rounded-lg text-background dark:text-foreground py1">
+                      <p className="bg-primary px-4 rounded-md text-background dark:text-foreground py1">
                         {technologie}
                       </p>
                     </Fragment>
@@ -82,7 +82,7 @@ const PortfolioSection = () => {
                   {item.links.map((link, index) => (
                     <Fragment key={String(index) + "link"}>
                       <Link href={link.href} target="_blank">
-                        <p className="flex gap-2 bg-foreground px-4 py-1 rounded-lg text-background">
+                        <p className="flex items-center gap-2 bg-foreground px-4 py-0.5 rounded-md text-background">
                           {link.icon}
                           {link.type}
                         </p>

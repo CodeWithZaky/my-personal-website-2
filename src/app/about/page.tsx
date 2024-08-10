@@ -1,5 +1,4 @@
 import Section1Bg1 from "@/assets/section-1-bg1.jpg";
-import { Button } from "@/components/ui/button";
 import { DATA } from "@/data/resume";
 import clsx from "clsx";
 import Image from "next/image";
@@ -115,7 +114,7 @@ const AboutSection = () => {
             innovative strategies to tackle them, leveraging technology to make
             a positive impact with intuitive, user-friendly products.
           </p>
-          <Button className="w-fit">Download CV</Button>
+          {/* <Button className="w-fit">Download CV</Button> */}
         </div>
 
         <div className="lg:col-span-2">
@@ -123,7 +122,7 @@ const AboutSection = () => {
             {DATA.skills.map((skill) => (
               <p
                 key={skill}
-                className="bg-primary px-4 py-2 rounded-xl w-fit text-background dark:text-foreground"
+                className="bg-primary px-4 py-2 rounded-md w-fit text-background dark:text-foreground"
               >
                 {skill}
               </p>

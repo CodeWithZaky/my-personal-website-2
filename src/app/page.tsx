@@ -168,8 +168,8 @@ const PortfolioSection = () => {
         {DATA.projects.slice(0, 3).map((project, index) => {
           return (
             <Fragment key={String(index) + "portfolio_items"}>
-              <div className="space-y-2 rounded-xl">
-                <Image src={project.image} alt="image" className="rounded-xl" />
+              <div className="space-y-2 rounded-md">
+                <Image src={project.image} alt="image" className="rounded-md" />
                 <div className="py-1">
                   <h1>{project.title}</h1>
                   <p className="text-muted-foreground">
@@ -188,7 +188,7 @@ const PortfolioSection = () => {
                 <div className="flex flex-wrap gap-2 py-1 w-[90%]">
                   {project.technologies.map((technologie, index) => (
                     <Fragment key={String(index) + "technologies"}>
-                      <p className="bg-primary px-4 rounded-lg text-background dark:text-foreground py1">
+                      <p className="bg-primary px-4 rounded-md text-background dark:text-foreground py1">
                         {technologie}
                       </p>
                     </Fragment>
@@ -198,7 +198,7 @@ const PortfolioSection = () => {
                   {project.links.map((link, index) => (
                     <Fragment key={String(index) + "link"}>
                       <Link href={link.href} target="_blank">
-                        <p className="flex gap-2 bg-foreground px-4 py-1 rounded-lg text-background">
+                        <p className="flex items-center gap-2 bg-foreground px-4 py-0.5 rounded-md text-background">
                           {link.icon}
                           {link.type}
                         </p>

@@ -43,7 +43,7 @@ const HeaderSection = () => {
 const ContactSection = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-20 mx-auto py-20 w-[85%] text-center">
-      <div className="justify-center items-center gap-5 lg:gap-10 grid grid-cols-2 lg:grid-cols-4 w-full text-center">
+      <div className="justify-center items-stretch gap-5 lg:gap-10 grid grid-cols-2 lg:grid-cols-4 w-full text-center">
         {DATA.contact.social.map((item, index) => {
           return (
             <Fragment key={String(index) + "contact-items"}>
