@@ -30,10 +30,10 @@ export default PortfolioPage;
 
 const HeaderSection = () => {
   return (
-    <div className="flex justify-center items-center mx-auto py-32 w-[85%] large-sentences">
-      <div className="flex flex-col justify-center items-center gap-3 w-fit">
+    <div className="large-sentences mx-auto flex w-[85%] items-center justify-center py-24">
+      <div className="flex w-fit flex-col items-center justify-center gap-3">
         <h1>Portfolio</h1>
-        <span className="bg-primary mx-auto w-[50%] h-[2px]" />
+        <span className="mx-auto h-[2px] w-[50%] bg-primary" />
       </div>
     </div>
   );
@@ -41,14 +41,14 @@ const HeaderSection = () => {
 
 const PortfolioSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center gap-20 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5">
-        <p className="text-center normal-sentences">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-20 py-24">
+      <div className="flex flex-col items-center justify-start gap-5">
+        <p className="normal-sentences text-center">
           What Service You Will Get From Me
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="gap-28 grid grid-cols-1 lg:grid-cols-2 px-2">
+      <div className="grid grid-cols-1 gap-28 px-2 lg:grid-cols-2">
         {DATA.projects.map((item, index) => {
           return (
             <Fragment key={String(index) + "portfolio_items"}>
@@ -66,23 +66,23 @@ const PortfolioSection = () => {
                     {item.category.note}
                   </span>
                 </p>
-                <p className="mr-2 lowercase normal-sentences">
+                <p className="normal-sentences mr-2 lowercase">
                   {item.description}
                 </p>
-                <div className="flex flex-wrap gap-2 w-[90%] normal-sentences">
+                <div className="normal-sentences flex w-[90%] flex-wrap gap-2">
                   {item.technologies.map((technologie, index) => (
                     <Fragment key={index}>
-                      <p className="bg-primary px-4 rounded-md text-background dark:text-foreground py1">
+                      <p className="py1 rounded-md bg-primary px-4 text-background dark:text-foreground">
                         {technologie}
                       </p>
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex gap-5 py-1 normal-sentences">
+                <div className="normal-sentences flex gap-5 py-1">
                   {item.links.map((link, index) => (
                     <Fragment key={String(index) + "link"}>
                       <Link href={link.href} target="_blank">
-                        <p className="flex items-center gap-2 bg-foreground px-4 py-0.5 rounded-md text-background">
+                        <p className="flex items-center gap-2 rounded-md bg-foreground px-4 py-0.5 text-background">
                           {link.icon}
                           {link.type}
                         </p>

@@ -31,7 +31,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="bg-primary/10 w-full">
+          <main className="w-full bg-primary/10">
             <Navbar />
             {children}
             <Footer />
