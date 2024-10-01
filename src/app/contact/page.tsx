@@ -31,10 +31,10 @@ export default ContactPage;
 
 const HeaderSection = () => {
   return (
-    <div className="flex justify-center items-center mx-auto py-32 w-[85%] large-sentences">
-      <div className="flex flex-col justify-center items-center gap-3 w-fit">
+    <div className="large-sentences mx-auto flex w-[85%] items-center justify-center py-24">
+      <div className="flex w-fit flex-col items-center justify-center gap-3">
         <h1>Contact</h1>
-        <span className="bg-primary mx-auto w-[50%] h-[2px]" />
+        <span className="mx-auto h-[2px] w-[50%] bg-primary" />
       </div>
     </div>
   );
@@ -42,12 +42,12 @@ const HeaderSection = () => {
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-20 mx-auto py-20 w-[85%] text-center">
-      <div className="justify-center items-stretch gap-5 lg:gap-10 grid grid-cols-2 lg:grid-cols-4 w-full text-center">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-center gap-20 py-20 text-center">
+      <div className="grid w-full grid-cols-2 items-stretch justify-center gap-5 text-center lg:grid-cols-4 lg:gap-10">
         {DATA.contact.social.map((item, index) => {
           return (
             <Fragment key={String(index) + "contact-items"}>
-              <Card className="flex flex-col justify-between items-center gap-3 px-10 py-5">
+              <Card className="flex flex-col items-center justify-between gap-3 px-10 py-5">
                 <>{item.icon}</>
                 <p className="normal-sentences">{item.title}</p>
                 <p className="normal-sentences">{item.name}</p>
@@ -59,7 +59,7 @@ const ContactSection = () => {
           );
         })}
       </div>
-      <p className="italic normal-sentences">
+      <p className="normal-sentences italic">
         {`" You can't know what you don't know? Get to know it first, and feel the
         spark! "`}
       </p>

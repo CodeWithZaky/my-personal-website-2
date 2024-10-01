@@ -41,8 +41,8 @@ export default function Home() {
 
 const WelcomeSection = () => {
   return (
-    <div className="flex justify-start items-start gap-10 mx-auto py-24 w-[85%]">
-      <div className="lg:flex flex-col justify-start items-center gap-5 hidden py-16 h-auto">
+    <div className="mx-auto flex w-[85%] items-start justify-start gap-10 py-24">
+      <div className="hidden h-auto flex-col items-center justify-start gap-5 py-16 lg:flex">
         {DATA.contact.social.map((contact_data, index) => (
           <Fragment key={index}>
             <Link href={contact_data.url} target="_blank">
@@ -51,12 +51,12 @@ const WelcomeSection = () => {
           </Fragment>
         ))}
       </div>
-      <div className="flex flex-col justify-start items-center md:items-start gap-7 lg:py-20 w-full md:w-[50%] lg:w-[70%]">
-        <p className="flex flex-col text-center md:text-start large-sentences">
+      <div className="flex w-full flex-col items-center justify-start gap-7 md:w-[50%] md:items-start lg:w-[70%] lg:py-20">
+        <p className="large-sentences flex flex-col text-center md:text-start">
           <span>{`I'm Web Developer`}</span>
           <span>A. Zaky Ubaidillah</span>
         </p>
-        <p className="text-center md:text-start normal-sentences">
+        <p className="normal-sentences text-center md:text-start">
           Creating seamless web experiences with creativity and technical skill.
           From dynamic websites to responsive designs, I bring ideas to life.
         </p>
@@ -70,20 +70,20 @@ const WelcomeSection = () => {
 
 const AboutSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center space-y-14 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5 text-center">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start space-y-14 py-24">
+      <div className="flex flex-col items-center justify-start gap-5 text-center">
         <p className="medium-sentences">About Me</p>
         <p className="normal-sentences">
           Passionate Developer Exploring the World.
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="justify-start items-start gap-24 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex flex-col gap-4 md:col-span-2 lg:col-span-1 w-full">
+      <div className="grid grid-cols-1 items-start justify-start gap-24 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex w-full flex-col gap-4 md:col-span-2 lg:col-span-1">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
             Passionate Developer Exploring the World.
           </h1>
-          <span className="bg-primary w-[100px] h-[2px]" />
+          <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
             Full-stack developer with 2+ years of experience creating dynamic,
             responsive web apps. Expertise in React.js, Next.js, and Tailwind
@@ -93,7 +93,7 @@ const AboutSection = () => {
             <Button className="w-fit">Contact Me</Button>
           </Link>
         </div>
-        <div className="flex flex-col items-center gap-3 w-full">
+        <div className="flex w-full flex-col items-center gap-3">
           <p className="normal-sentences">
             I use the T3 stack for scalable, efficient apps. Passionate about
             continuous learning, staying current with industry trends and tech.
@@ -104,7 +104,7 @@ const AboutSection = () => {
             difference in the digital landscape.
           </p>
         </div>
-        <div className="flex justify-start md:justify-end items-center w-full">
+        <div className="flex w-full items-center justify-start md:justify-end">
           <div className="border-image rounded-md">
             <Image
               src={Section1Bg1}
@@ -120,27 +120,27 @@ const AboutSection = () => {
 
 const ServiceSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center gap-10 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-10 py-24">
+      <div className="flex flex-col items-center justify-start gap-5">
         <p className="medium-sentences text-center">My Services</p>
-        <p className="text-center normal-sentences">
+        <p className="normal-sentences text-center">
           Comprehensive Web Development Solutions
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="flex md:flex-row flex-col justify-center items-stretch gap-5">
+      <div className="flex flex-col items-stretch justify-center gap-5 md:flex-row">
         {DATA.services.map((item, index) => (
           <Fragment key={index}>
-            <Card className="flex flex-col justify-between items-center md:w-1/3">
+            <Card className="flex flex-col items-center justify-between md:w-1/3">
               <CardHeader>
-                <CardTitle className="flex justify-center items-center mb-2">
+                <CardTitle className="mb-2 flex items-center justify-center">
                   <Crown />
                 </CardTitle>
                 <CardDescription className="medium-sentences text-center">
                   {item.description}
                 </CardDescription>
               </CardHeader>
-              <CardContent className="mx-2 md:mx-3 lg:mx-5 text-center normal-sentences">
+              <CardContent className="normal-sentences mx-2 text-center md:mx-3 lg:mx-5">
                 {item.content}
               </CardContent>
               <CardFooter className="flex justify-between">
@@ -156,15 +156,15 @@ const ServiceSection = () => {
 
 const PortfolioSection = () => {
   return (
-    <div className="flex flex-col justify-start items-center gap-14 mx-auto py-24 w-[85%]">
-      <div className="flex flex-col justify-start items-center gap-5">
+    <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-14 py-24">
+      <div className="flex flex-col items-center justify-start gap-5">
         <p className="medium-sentences text-center">Latest Project</p>
-        <p className="text-center normal-sentences">
+        <p className="normal-sentences text-center">
           Innovative Solutions for Modern Challenges
         </p>
-        <span className="bg-primary w-[100px] h-[2px]" />
+        <span className="h-[2px] w-[100px] bg-primary" />
       </div>
-      <div className="gap-10 grid grid-cols-1 lg:grid-cols-3 px-2">
+      <div className="grid grid-cols-1 gap-10 px-2 lg:grid-cols-3">
         {DATA.projects.slice(0, 3).map((project, index) => {
           return (
             <Fragment key={String(index) + "portfolio_items"}>
@@ -185,20 +185,20 @@ const PortfolioSection = () => {
                   </p>
                   <p>{project.description} </p>
                 </div>
-                <div className="flex flex-wrap gap-2 py-1 w-[90%]">
+                <div className="flex w-[90%] flex-wrap gap-2 py-1">
                   {project.technologies.map((technologie, index) => (
                     <Fragment key={String(index) + "technologies"}>
-                      <p className="bg-primary px-4 rounded-md text-background dark:text-foreground py1">
+                      <p className="py1 rounded-md bg-primary px-4 text-background dark:text-foreground">
                         {technologie}
                       </p>
                     </Fragment>
                   ))}
                 </div>
-                <div className="flex gap-5 py-1 normal-sentences">
+                <div className="normal-sentences flex gap-5 py-1">
                   {project.links.map((link, index) => (
                     <Fragment key={String(index) + "link"}>
                       <Link href={link.href} target="_blank">
-                        <p className="flex items-center gap-2 bg-foreground px-4 py-0.5 rounded-md text-background">
+                        <p className="flex items-center gap-2 rounded-md bg-foreground px-4 py-0.5 text-background">
                           {link.icon}
                           {link.type}
                         </p>
