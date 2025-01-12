@@ -22,7 +22,6 @@ export const DATA = {
     "T3Stack",
     "Postgres",
     "MySql",
-    "SQLite",
     "Tailwind",
     "ShadcnUI",
     "MagicUI",
@@ -182,7 +181,7 @@ export const DATA = {
       },
       description:
         "PERSONAL WEBSITE FOR INFORMATION ABOUT ME, ESPECIALLY IN THE FIELD OF TECHNOLOGY",
-      technologies: ["NEXT JS", "TAILWIND CSS", "FRAMERMOTION"],
+      technologies: ["NEXT JS", "TAILWIND CSS"],
       links: [
         {
           type: "Website",
