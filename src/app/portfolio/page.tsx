@@ -44,7 +44,14 @@ const PortfolioSection = () => {
     <div className="mx-auto flex w-[85%] flex-col items-center justify-start gap-20 py-24">
       <div className="flex flex-col items-center justify-start gap-5">
         <p className="normal-sentences text-center">
-          What Service You Will Get From Me
+          New projects are on my GitHub! Check them out{" "}
+          <Link
+            className="underline"
+            href="https://github.com/codewithzaky"
+            target="_blank"
+          >
+            here
+          </Link>
         </p>
         <span className="h-[2px] w-[100px] bg-primary" />
       </div>
