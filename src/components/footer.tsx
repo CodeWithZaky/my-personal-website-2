@@ -29,7 +29,7 @@ const Footer = () => {
       </div>
       <div className="w-full border-t border-border">
         <div className="normal-sentences mx-auto flex h-[100px] w-[85%] items-center justify-center border-t border-border">
-          <p>Copyright © 2024 CodeWithZaky</p>
+          <p>Copyright © 2025 CodeWithZaky</p>
         </div>
       </div>
     </footer>
