@@ -60,13 +60,13 @@ const AboutSection = () => {
           </h1>
           <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
-            As a full-stack web developer with over two years of experience, I
-            specialize in crafting dynamic, responsive web applications. My
-            skill set includes React.js and Next.js for front-end development,
-            complemented by Tailwind CSS and a range of component libraries for
-            sleek, modern design. I leverage the T3 stack for building scalable,
-            efficient applications, and stay updated with the latest industry
-            trends.
+            I’m a full-stack developer with over two years of experience,
+            creating dynamic and responsive web applications. My expertise lies
+            in React.js and Next.js for front-end development, enhanced by
+            Tailwind CSS and various component libraries to achieve sleek,
+            modern designs. I also leverage the T3 stack to build scalable,
+            efficient applications while staying up-to-date with the latest
+            industry trends.
           </p>
           <div className="normal-sentences flex flex-col gap-2">
             <p>{"Let's Connect."}</p>
@@ -81,15 +81,15 @@ const AboutSection = () => {
           <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
             Currently a 5th-semester student at Universitas Islam Lamongan,
-            class of 2022, I balance academic learning with real-world projects.
-            My university experience is rich with hands-on projects and
-            collaborations that enhance my skills and deepen my practical
-            understanding.
+            class of 2022, I balance my academic pursuits with real-world
+            projects. My university experience is enriched by hands-on projects
+            and collaborative work, which further enhances my skills and
+            practical knowledge.
           </p>
           <p className="normal-sentences">
-            My focus is on developing web solutions that exceed client
-            expectations and deliver exceptional user experiences. I aim to make
-            a meaningful impact on the digital landscape with high-quality,
+            I am dedicated to delivering web solutions that exceed client
+            expectations and ensure exceptional user experiences. My aim is to
+            make a significant impact in the digital space through high-quality,
             user-centric applications.
           </p>
           <div className="mt-3 flex gap-3 md:gap-5">
@@ -109,10 +109,11 @@ const AboutSection = () => {
           </h1>
           <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
-            My passion lies in creating solutions that address real-world
-            challenges. I focus on understanding core issues and developing
-            innovative strategies to tackle them, leveraging technology to make
-            a positive impact with intuitive, user-friendly products.
+            My passion is creating solutions that tackle real-world challenges.
+            I focus on understanding the underlying issues and developing
+            innovative strategies to address them, leveraging technology to
+            create intuitive, user-friendly products that make a positive
+            impact.
           </p>
           {/* <Button className="w-fit">Download CV</Button> */}
         </div>

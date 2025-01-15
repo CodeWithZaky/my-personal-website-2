@@ -73,34 +73,36 @@ const AboutSection = () => {
       <div className="flex flex-col items-center justify-start gap-5 text-center">
         <p className="medium-sentences">About Me</p>
         <p className="normal-sentences">
-          Passionate Developer Exploring the World.
+          Developer with a Passion for Innovation and Problem Solving.
         </p>
         <span className="h-[2px] w-[100px] bg-primary" />
       </div>
       <div className="grid grid-cols-1 items-start justify-start gap-24 md:grid-cols-2 lg:grid-cols-3">
         <div className="flex w-full flex-col gap-4 md:col-span-2 lg:col-span-1">
           <h1 className="text-xl md:text-3xl lg:text-5xl">
-            Passionate Developer Exploring the World.
+            Developer with a Passion for Innovation and Problem Solving.
           </h1>
           <span className="h-[2px] w-[100px] bg-primary" />
           <p className="normal-sentences">
-            Full-stack developer with 2+ years of experience creating dynamic,
-            responsive web apps. Expertise in React.js, Next.js, and Tailwind
-            CSS for sleek, modern designs.
+            I am a full-stack developer with over 2 years of experience in
+            building dynamic, responsive web applications. I specialize in
+            React.js, Next.js, and Tailwind CSS, focusing on creating sleek,
+            modern designs.
           </p>
           <Link href="/contact">
-            <Button className="w-fit">Contact Me</Button>
+            <Button className="w-fit">Get in Touch</Button>
           </Link>
         </div>
         <div className="flex w-full flex-col items-center gap-3">
           <p className="normal-sentences">
-            I use the T3 stack for scalable, efficient apps. Passionate about
-            continuous learning, staying current with industry trends and tech.
+            I work with the T3 stack to develop scalable and efficient web apps.
+            I'm passionate about continuous learning, always keeping up with the
+            latest trends and technologies in the industry.
           </p>
           <p className="normal-sentences">
-            Dedicated to developing web solutions that meet client needs and
-            deliver exceptional user experiences. Committed to making a
-            difference in the digital landscape.
+            I'm committed to creating web solutions that align with client
+            goals, ensuring seamless user experiences. I strive to make a
+            meaningful impact in the digital world.
           </p>
         </div>
         <div className="flex w-full items-center justify-start md:justify-end">
