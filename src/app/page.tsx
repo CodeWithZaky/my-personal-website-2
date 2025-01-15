@@ -95,14 +95,14 @@ const AboutSection = () => {
         </div>
         <div className="flex w-full flex-col items-center gap-3">
           <p className="normal-sentences">
-            I work with the T3 stack to develop scalable and efficient web apps.
+            {`I work with the T3 stack to develop scalable and efficient web apps.
             I'm passionate about continuous learning, always keeping up with the
-            latest trends and technologies in the industry.
+            latest trends and technologies in the industry.`}
           </p>
           <p className="normal-sentences">
-            I'm committed to creating web solutions that align with client
+            {`            I'm committed to creating web solutions that align with client
             goals, ensuring seamless user experiences. I strive to make a
-            meaningful impact in the digital world.
+            meaningful impact in the digital world.`}
           </p>
         </div>
         <div className="flex w-full items-center justify-start md:justify-end">
