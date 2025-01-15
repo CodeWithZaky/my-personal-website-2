@@ -8,6 +8,7 @@ import { Database, Github, Globe, Palette, Server } from "lucide-react";
 
 export const DATA = {
   name: "Ahmad Zaky Ubaidillah",
+  nickname: "Zaky",
   initials: "AZU",
   url: "https://codewithzaky.vercel.app",
   description:
@@ -23,6 +24,8 @@ export const DATA = {
     "T3Stack",
     "Postgres",
     "MySql",
+    "Supabase",
+    "Github",
     "Tailwind",
     "ShadcnUI",
     "DaisyUI",

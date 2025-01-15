@@ -53,8 +53,8 @@ const WelcomeSection = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-start gap-7 md:w-[50%] md:items-start lg:w-[70%] lg:py-20">
         <p className="large-sentences flex flex-col text-center md:text-start">
-          <span>{`I'm Web Developer`}</span>
-          <span>A. Zaky Ubaidillah</span>
+          <span className="text-7xl">{`I'm ${DATA.nickname}`}</span>
+          <span>Fullstack Web Developer</span>
         </p>
         <p className="normal-sentences text-center md:text-start">
           Creating seamless web experiences with creativity and technical skill.
