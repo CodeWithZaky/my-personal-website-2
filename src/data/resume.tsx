@@ -1,3 +1,4 @@
+import BarokahElectric from "@/assets/barokah-electric.png";
 import Catatanku from "@/assets/catatanku.png";
 import Gedongarum from "@/assets/gedongarum.png";
 import MatrixCalculator from "@/assets/matrix-calculator.png";
@@ -232,6 +233,34 @@ export const DATA = {
         },
       ],
       image: Catatanku,
+    },
+    {
+      id: 6,
+      title: "Barokah Electric",
+      dates: "Nov 2024 - Dec 2024",
+      category: {
+        title: "College Project",
+        note: "5th Semester",
+      },
+      description:
+        "This project is part of my final assignment for the E-commerce course in the 5th semester. It focuses on building an e-commerce platform for Barokah Electric.",
+      technologies: [
+        "Next.js",
+        "ShadCN UI",
+        "tRPC",
+        "Prisma ORM",
+        "PostgreSQL",
+        "Uploadthing",
+        "T3 Stack",
+      ],
+      links: [
+        {
+          type: "Github",
+          icon: <Github width={20} />,
+          href: "https://github.com/CodeWithZaky/barokah-electric",
+        },
+      ],
+      image: BarokahElectric,
     },
   ],
 } as const;
