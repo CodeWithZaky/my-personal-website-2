@@ -53,11 +53,11 @@ const WelcomeSection = () => {
       </div>
       <div className="flex w-full flex-col items-center justify-start gap-7 md:w-[50%] md:items-start lg:w-[70%] lg:py-20">
         <p className="large-sentences flex flex-col text-center md:text-start">
-          <span className="text-7xl">{`Hey, I'm ${DATA.nickname}!`}</span>
-          <span>{DATA.role}</span>
+          <span className="text-7xl">{`Hey, I'm ${DATA.profile.nickname}!`}</span>
+          <span>{DATA.profile.role}</span>
         </p>
         <p className="normal-sentences text-center md:text-start">
-          {DATA.description}
+          {DATA.profile.description}
         </p>
         <Link href={"/about"}>
           <Button>Learn More</Button>

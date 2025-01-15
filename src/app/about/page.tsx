@@ -120,7 +120,7 @@ const AboutSection = () => {
 
         <div className="lg:col-span-2">
           <div className="flex flex-wrap gap-3 lg:w-[75%]">
-            {DATA.skills.map((skill) => (
+            {DATA.profile.skills.map((skill) => (
               <p
                 key={skill}
                 className="w-fit rounded-md bg-primary px-4 py-2 text-background dark:text-foreground"
