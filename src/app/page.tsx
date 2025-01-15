@@ -165,51 +165,58 @@ const PortfolioSection = () => {
         <span className="h-[2px] w-[100px] bg-primary" />
       </div>
       <div className="grid grid-cols-1 gap-10 px-2 lg:grid-cols-3">
-        {DATA.projects.slice(0, 3).map((project, index) => {
-          return (
-            <Fragment key={String(index) + "portfolio_items"}>
-              <div className="space-y-2 rounded-md">
-                <Image src={project.image} alt="image" className="rounded-md" />
-                <div className="py-1">
-                  <h1>{project.title}</h1>
-                  <p className="text-muted-foreground">
-                    {project.dates}
-                    <span>
-                      {" / "}
-                      {project.category.title}
-                    </span>
-                    <span>
-                      {" / "}
-                      {project.category.note}
-                    </span>
-                  </p>
-                  <p>{project.description} </p>
-                </div>
-                <div className="flex w-[90%] flex-wrap gap-2 py-1">
-                  {project.technologies.map((technologie, index) => (
-                    <Fragment key={String(index) + "technologies"}>
-                      <p className="py1 rounded-md bg-primary px-4 text-background dark:text-foreground">
-                        {technologie}
-                      </p>
-                    </Fragment>
-                  ))}
-                </div>
-                <div className="normal-sentences flex gap-5 py-1">
-                  {project.links.map((link, index) => (
-                    <Fragment key={String(index) + "link"}>
-                      <Link href={link.href} target="_blank">
-                        <p className="flex items-center gap-2 rounded-md bg-foreground px-4 py-0.5 text-background">
-                          {link.icon}
-                          {link.type}
+        {[...DATA.projects]
+          .reverse()
+          .slice(0, 3)
+          .map((project, index) => {
+            return (
+              <Fragment key={String(index) + "portfolio_items"}>
+                <div className="space-y-2 rounded-md">
+                  <Image
+                    src={project.image}
+                    alt="image"
+                    className="rounded-md"
+                  />
+                  <div className="py-1">
+                    <h1>{project.title}</h1>
+                    <p className="text-muted-foreground">
+                      {project.dates}
+                      <span>
+                        {" / "}
+                        {project.category.title}
+                      </span>
+                      <span>
+                        {" / "}
+                        {project.category.note}
+                      </span>
+                    </p>
+                    <p>{project.description} </p>
+                  </div>
+                  <div className="flex w-[90%] flex-wrap gap-2 py-1">
+                    {project.technologies.map((technologie, index) => (
+                      <Fragment key={String(index) + "technologies"}>
+                        <p className="py1 rounded-md bg-primary px-4 uppercase text-background dark:text-foreground">
+                          {technologie}
                         </p>
-                      </Link>
-                    </Fragment>
-                  ))}
+                      </Fragment>
+                    ))}
+                  </div>
+                  <div className="normal-sentences flex gap-5 py-1">
+                    {project.links.map((link, index) => (
+                      <Fragment key={String(index) + "link"}>
+                        <Link href={link.href} target="_blank">
+                          <p className="flex items-center gap-2 rounded-md bg-foreground px-4 py-0.5 text-background">
+                            {link.icon}
+                            {link.type}
+                          </p>
+                        </Link>
+                      </Fragment>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            </Fragment>
-          );
-        })}
+              </Fragment>
+            );
+          })}
       </div>
       <Link href={"/portfolio"} className="group">
         <Button className="px-7">

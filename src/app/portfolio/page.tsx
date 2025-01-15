@@ -56,7 +56,7 @@ const PortfolioSection = () => {
         <span className="h-[2px] w-[100px] bg-primary" />
       </div>
       <div className="grid grid-cols-1 gap-28 px-2 lg:grid-cols-2">
-        {DATA.projects.map((item, index) => {
+        {[...DATA.projects].reverse().map((item, index) => {
           return (
             <Fragment key={String(index) + "portfolio_items"}>
               <div className="flex flex-col justify-between space-y-3 rounded-md">
@@ -79,7 +79,7 @@ const PortfolioSection = () => {
                 <div className="normal-sentences flex w-[90%] flex-wrap gap-2">
                   {item.technologies.map((technologie, index) => (
                     <Fragment key={index}>
-                      <p className="py1 rounded-md bg-primary px-4 text-background dark:text-foreground">
+                      <p className="py1 rounded-md bg-primary px-4 uppercase text-background dark:text-foreground">
                         {technologie}
                       </p>
                     </Fragment>
