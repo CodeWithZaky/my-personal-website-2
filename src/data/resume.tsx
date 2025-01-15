@@ -11,9 +11,10 @@ export const DATA = {
   name: "Ahmad Zaky Ubaidillah",
   nickname: "Zaky",
   initials: "AZU",
+  role: "Fullstack Web Developer",
   url: "https://codewithzaky.vercel.app",
   description:
-    "passionate about creating seamless digital experiences. From building stunning frontends to powerful backends, I bring ideas to life with clean code and creative solutions. Let’s build something incredible together!",
+    "I’m all about making cool stuff online. Whether it's building awesome websites or crafting smooth backends, I bring your ideas to life with clean, creative code. Want to work together? Let’s make something great!",
   avatarUrl: "/me.png",
   skills: [
     "Javascript",
