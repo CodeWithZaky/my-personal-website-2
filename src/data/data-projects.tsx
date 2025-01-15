@@ -80,7 +80,7 @@ export const projects = [
     category: { title: "College Project", note: "4th Semester" },
     description:
       "A website developed to provide information about my hometown village, created as part of a college project.",
-    technologies: ["Next.js", "Tailwind CSS", "ShadCN UI"],
+    technologies: ["Next.js", "Tailwind CSS", "ShadCN UI", "Swiper Js"],
     links: [
       {
         type: "Website",
