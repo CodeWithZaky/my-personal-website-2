@@ -57,8 +57,7 @@ const WelcomeSection = () => {
           <span>Fullstack Web Developer</span>
         </p>
         <p className="normal-sentences text-center md:text-start">
-          Creating seamless web experiences with creativity and technical skill.
-          From dynamic websites to responsive designs, I bring ideas to life.
+          {DATA.description}
         </p>
         <Link href={"/about"}>
           <Button>Learn More</Button>

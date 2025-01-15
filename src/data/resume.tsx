@@ -4,7 +4,7 @@ import MatrixCalculator from "@/assets/matrix-calculator.png";
 import MyPortfolioV1 from "@/assets/my-portfolio-v1.png";
 import NumberConverter from "@/assets/number-converter.png";
 import { Instagram, Linkedin, Mail } from "@/components/icons/social-media";
-import { Database, Github, Globe, Palette, Server } from "lucide-react";
+import { Github, Globe, Layers, Palette, Server } from "lucide-react";
 
 export const DATA = {
   name: "Ahmad Zaky Ubaidillah",
@@ -12,7 +12,7 @@ export const DATA = {
   initials: "AZU",
   url: "https://codewithzaky.vercel.app",
   description:
-    "Creating seamless web experiences with creativity and technical skill. From dynamic websites to responsive designs, I bring ideas to life.",
+    "passionate about creating seamless digital experiences. From building stunning frontends to powerful backends, I bring ideas to life with clean code and creative solutions. Let’s build something incredible together!",
   avatarUrl: "/me.png",
   skills: [
     "Javascript",
@@ -52,22 +52,23 @@ export const DATA = {
     {
       description: "Frontend Web Development",
       content:
-        "Responsive interfaces using React.js, Next.js, and Tailwind CSS with libraries like shadcn UI, daisyUI, and achernity UI.",
+        "Crafting responsive and engaging user interfaces using React.js, Next.js, and Tailwind CSS. Experienced with libraries like ShadCN UI, DaisyUI, Radix UI, and Framer Motion.",
       icon: <Palette />,
     },
     {
       description: "Backend Web Development",
       content:
-        "Robust backends with Next.js API, tRPC, Prisma ORM, and databases like PostgreSQL, MySQL, and SQLite.",
+        "Building scalable and efficient backends using Next.js API, REST APIs, tRPC, and Prisma ORM. Proficient in handling databases such as PostgreSQL, MySQL, and Supabase.",
       icon: <Server />,
     },
     {
       description: "Fullstack Web Development",
       content:
-        "End-to-end solutions with the T3 stack and Next.js for comprehensive web development.",
-      icon: <Database />,
+        "Delivering complete web solutions with the T3 Stack and Next.js, ensuring seamless integration between frontend and backend.",
+      icon: <Layers />,
     },
   ],
+
   contact: {
     email: "ahmadzakyubaidillah@gmail.com",
     social: [
