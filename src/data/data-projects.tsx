@@ -135,6 +135,7 @@ export const projects = [
     technologies: [
       "Next.js",
       "ShadCN UI",
+      "Zustand",
       "tRPC",
       "Prisma ORM",
       "PostgreSQL",
