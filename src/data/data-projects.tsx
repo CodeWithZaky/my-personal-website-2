@@ -4,12 +4,13 @@ import Gedongarum from "@/assets/gedongarum.png";
 import MatrixCalculator from "@/assets/matrix-calculator.png";
 import MyPortfolioV1 from "@/assets/my-portfolio-v1.png";
 import NumberConverter from "@/assets/number-converter.png";
+import MyPortfolioV2 from "@/assets/portfolio-v2.jpg";
 import { Github, Globe } from "lucide-react";
 
 export const projects = [
   {
     id: 1,
-    title: "My Personal Website",
+    title: "My Personal Website v1",
     dates: "Apr 2023 - Sep 2023",
     category: { title: "Personal Project", note: "Portfolio" },
     description:
@@ -24,7 +25,7 @@ export const projects = [
       {
         type: "Github",
         icon: <Github width={20} />,
-        href: "https://github.com/CodeWithZaky/my-personal-website",
+        href: "https://github.com/CodeWithZaky/my-personal-website-1",
       },
     ],
     image: MyPortfolioV1,
@@ -75,6 +76,28 @@ export const projects = [
   },
   {
     id: 4,
+    title: "My Personal Website",
+    dates: "Mar 2024 - Apr 2024",
+    category: { title: "Personal Project", note: "Portfolio" },
+    description:
+      "Develop a personal website to showcase travel, skills and projects in the field technology.",
+    technologies: ["Next.js", "Tailwind CSS", "ShadCN UI"],
+    links: [
+      {
+        type: "Website",
+        icon: <Globe width={20} />,
+        href: "https://codewithzaky.vercel.app",
+      },
+      {
+        type: "Github",
+        icon: <Github width={20} />,
+        href: "https://github.com/CodeWithZaky/my-personal-website",
+      },
+    ],
+    image: MyPortfolioV2,
+  },
+  {
+    id: 5,
     title: "Gedongarum",
     dates: "Feb 2024 - Jul 2024",
     category: { title: "College Project", note: "4th Semester" },
@@ -96,7 +119,7 @@ export const projects = [
     image: Gedongarum,
   },
   {
-    id: 5,
+    id: 6,
     title: "Catatanku",
     dates: "Nov 2024 - Dec 2024",
     category: { title: "College Project", note: "5th Semester" },
@@ -126,7 +149,7 @@ export const projects = [
     image: Catatanku,
   },
   {
-    id: 6,
+    id: 7,
     title: "Barokah Electric",
     dates: "Nov 2024 - Dec 2024",
     category: { title: "College Project", note: "5th Semester" },
