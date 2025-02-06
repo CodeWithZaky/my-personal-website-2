@@ -221,7 +221,7 @@ const PortfolioSection = () => {
             );
           })}
       </div>
-      <Link href={"/portfolio"} className="group">
+      <Link href={"/projects"} className="group">
         <Button className="px-7">
           see more
           <span className="pl-2 transition-all group-hover:translate-x-2">
