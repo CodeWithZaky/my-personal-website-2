@@ -5,7 +5,7 @@ export const profile = {
   role: "Fullstack Web Developer",
   url: "https://codewithzaky.vercel.app",
   description:
-    "I’m all about making cool stuff online. Whether it's building awesome websites or crafting smooth backends, I bring your ideas to life with clean, creative code. Want to work together? Let’s make something great!",
+    "I am a fullstack web developer with more than 2 years of experience in building dynamic and responsive web applications. I master React.js, Next.js, and Tailwind CSS, and have experience in developing efficient backends using Next.js API, REST APIs, tRPC, and Prisma ORM.",
   avatarUrl: "/me.png",
   skills: [
     "Javascript",
