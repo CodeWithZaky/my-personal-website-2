@@ -1,4 +1,3 @@
-import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import clsx from "clsx";
@@ -34,7 +33,7 @@ export default function RootLayout({
           <main className="w-full bg-primary/10">
             <Navbar />
             {children}
-            <Footer />
+            {/* <Footer /> */}
           </main>
         </ThemeProvider>
       </body>

@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { Card } from "@/components/ui/card";
 import { DATA } from "@/data/resume";
 import clsx from "clsx";
@@ -9,6 +10,7 @@ const ContactPage = () => {
   const page_sections = [
     <HeaderSection key="header_section" />,
     <ContactSection key="contact_section" />,
+    <Footer key={"footer_sections"} />,
   ];
   return (
     <div>
@@ -60,8 +62,7 @@ const ContactSection = () => {
         })}
       </div>
       <p className="normal-sentences italic">
-        {`" You can't know what you don't know? Get to know it first, and feel the
-        spark! "`}
+        {`" You can't know what you don't know. So, get to know it first, and feel the spark now! "`}
       </p>
     </div>
   );

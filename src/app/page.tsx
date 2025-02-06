@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -18,9 +19,10 @@ import Section1Bg1 from "../assets/section-1-bg1.jpg";
 export default function Home() {
   const page_sections = [
     <WelcomeSection key="welcome_sections" />,
-    <AboutSection key="about_sections" />,
+    // <AboutSection key="about_sections" />,
     <PortfolioSection key="portfolio_sections" />,
     <ServiceSection key="service_sections" />,
+    <Footer key={"footer_sections"} />,
   ];
   return (
     <div>
@@ -60,7 +62,7 @@ const WelcomeSection = () => {
           {DATA.profile.description}
         </p>
         <Link href={"/about"}>
-          <Button>Learn More</Button>
+          <Button>More About Me</Button>
         </Link>
       </div>
     </div>

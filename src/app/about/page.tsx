@@ -1,4 +1,5 @@
 import Section1Bg1 from "@/assets/section-1-bg1.jpg";
+import Footer from "@/components/footer";
 import { DATA } from "@/data/resume";
 import clsx from "clsx";
 import Image from "next/image";
@@ -9,6 +10,7 @@ const AboutPage = () => {
   const page_sections = [
     <HeaderSection key="header_section" />,
     <AboutSection key="about_section" />,
+    <Footer key={"footer_sections"} />,
   ];
   return (
     <div>

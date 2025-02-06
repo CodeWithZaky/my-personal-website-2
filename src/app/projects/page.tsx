@@ -1,13 +1,15 @@
+import Footer from "@/components/footer";
 import { DATA } from "@/data/resume";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 
-const PortfolioPage = () => {
+const ProjectsPage = () => {
   const page_sections = [
     <HeaderSection key="header_section" />,
     <PortfolioSection key="portfolio_section" />,
+    <Footer key={"footer_sections"} />,
   ];
   return (
     <div>
@@ -26,13 +28,13 @@ const PortfolioPage = () => {
   );
 };
 
-export default PortfolioPage;
+export default ProjectsPage;
 
 const HeaderSection = () => {
   return (
     <div className="large-sentences mx-auto flex w-[85%] items-center justify-center py-24">
       <div className="flex w-fit flex-col items-center justify-center gap-3">
-        <h1>Portfolio</h1>
+        <h1>Projects</h1>
         <span className="mx-auto h-[2px] w-[50%] bg-primary" />
       </div>
     </div>
