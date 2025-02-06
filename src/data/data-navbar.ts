@@ -1,6 +1,6 @@
 export const navbar = [
   { path: "/", title: "Home" },
   { path: "/about", title: "About" },
-  { path: "/portfolio", title: "Portfolio" },
+  { path: "/projects", title: "Projects" },
   { path: "/contact", title: "Contact" },
 ];
